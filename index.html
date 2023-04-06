@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rastgele Şifre Oluşturucu</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6">
+          <div class="card shadow-lg border-0 rounded-lg mt-5">
+            <div class="card-header">
+              <h3 class="text-center font-weight-light my-4">
+                Rastgele Şifre Oluşturucu
+              </h3>
+            </div>
+            <p class="arac">
+              Bu araç, rastgele bir şifre oluşturmanıza yardımcı olur.
+            </p>
+            <div class="card-body">
+              <div class="form-group">
+                <label class="small mb-1" for="length">Şifre Uzunluğu:</label>
+                <input
+                  class="form-control py-4"
+                  id="length"
+                  name="length"
+                  type="number"
+                  min="4"
+                  max="32"
+                  value="8"
+                />
+              </div>
+              <div class="form-group mt-4 mb-0">
+                <button
+                  class="btn btn-dark btn-block"
+                  id="generate"
+                  onclick="generatePassword()"
+                >
+                  Oluştur
+                </button>
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <div class="small"><p id="password"></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
